@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "272100424073",
+    "project_id": "authentication-39c54",
+    "storage_bucket": "authentication-39c54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272100424073:android:7473cbb304ee0b73c80958",
+        "android_client_info": {
+          "package_name": "bmi.cal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCWnUsxf5pZmeqTQKnrOTLDkjwiz8O8_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272100424073:android:0996f8228d671a41c80958",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCWnUsxf5pZmeqTQKnrOTLDkjwiz8O8_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
