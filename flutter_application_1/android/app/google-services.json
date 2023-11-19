@@ -1,32 +1,13 @@
 {
   "project_info": {
-    "project_number": "272100424073",
-    "project_id": "authentication-39c54",
-    "storage_bucket": "authentication-39c54.appspot.com"
+    "project_number": "366672467171",
+    "project_id": "auth-ffbd3",
+    "storage_bucket": "auth-ffbd3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:272100424073:android:7473cbb304ee0b73c80958",
-        "android_client_info": {
-          "package_name": "bmi.cal"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCCWnUsxf5pZmeqTQKnrOTLDkjwiz8O8_8"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:272100424073:android:0996f8228d671a41c80958",
+        "mobilesdk_app_id": "1:366672467171:android:672aeef32cbe37de68e1d6",
         "android_client_info": {
           "package_name": "com.example.flutter_application_1"
         }
@@ -34,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCCWnUsxf5pZmeqTQKnrOTLDkjwiz8O8_8"
+          "current_key": "AIzaSyBVBhuSwyyj_R9T7RxpqAPfUheXk66snzI"
         }
       ],
       "services": {

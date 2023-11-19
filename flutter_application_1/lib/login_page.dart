@@ -1,5 +1,6 @@
 // import 'dart:js';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/compornents/signinbutton.dart';
 import 'package:flutter_application_1/compornents/squre_tile.dart';
@@ -10,10 +11,13 @@ class LoginPage extends StatelessWidget {
     super.key,
   });
   //text editing controller
-  final usernameController = TextEditingController();
+  final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
-  void signInUser() {}
+  void signInUser() async {
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: emailController.text, password: passwordController.text);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +40,7 @@ class LoginPage extends StatelessWidget {
               const Text(
                 'Welcome back you\'ve been missed !',
                 style: TextStyle(
-                  color: Color(0xFF455A64),
+                  color: Color.fromARGB(255, 90, 81, 81),
                   fontSize: 16,
                 ), // 0xFF455A64 is the hexadecimal representation of Colors.grey[700]
               ),
@@ -46,7 +50,7 @@ class LoginPage extends StatelessWidget {
 
               //email textfield
               MyTextField(
-                controller: usernameController,
+                controller: emailController,
                 hintText: 'Email',
                 obscureText: false,
               ),

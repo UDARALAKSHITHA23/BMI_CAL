@@ -1,4 +1,6 @@
 // ignore: unnecessary_import
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/calculation_.dart';
 import 'package:flutter_application_1/resaltscreen.dart';
@@ -25,16 +27,29 @@ class _HomePageState extends State<HomePage> {
   double height = 0;
   int age = 1;
   int weight = 0;
+  void signUserOut() {
+    FirebaseAuth.instance.signOut();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          Align(
+            alignment: Alignment.centerRight,
+            child: IconButton(
+              onPressed: signUserOut,
+              icon: Icon(Icons.logout),
+            ),
+          ),
+        ],
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,
         title: const Text(
           'BMI CALCULATOR',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Color.fromARGB(255, 18, 16, 16)),
         ),
       ),
       body: Column(
@@ -214,7 +229,10 @@ class _HomePageState extends State<HomePage> {
           alignment: Alignment.center,
           width: MediaQuery.of(context).size.width * 0.4,
           padding: const EdgeInsets.all(18),
-          child: Text(title),
+          child: Text(
+            title,
+            style: TextStyle(color: const Color.fromARGB(255, 11, 9, 9)),
+          ),
         ),
       ),
     );
